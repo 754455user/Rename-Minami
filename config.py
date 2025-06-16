@@ -44,8 +44,8 @@ class Txt(object):
     ABOUT_TXT = """
 ╭───────────────⍟
 ├<b>🤖 My Name</b> : {}
-├<b>🖥️ Developer</b> : <a href=https://t.me/MadflixBotz>MadflixBotz</a> 
-├<b>👨‍💻 Programer</b> : <a href=https://t.me/MadflixSupport>Jishu Developer</a>
+├<b>🖥️ Developer</b> : <a href=https://t.me/RDX_PVT_LTD>RDX_PVT_LTD</a> 
+├<b>👨‍💻 Programer</b> : <a href=https://t.me/RDX_PVT_LTD>RDX_PVT_LTD</a>
 ├<b>📕 Library</b> : <a href=https://github.com/pyrogram>Pyrogram</a>
 ├<b>✏️ Language</b> : <a href=https://www.python.org>Python 3</a>
 ├<b>💾 Database</b> : <a href=https://cloud.mongodb.com>Mongo DB</a>
@@ -98,9 +98,9 @@ If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upt
 
 For Example :-
 
-<code>By :- @MadflixBotz</code>
+<code>By :- @RDX_PVT_LTD</code>
 
-💬 For Any Help Contact @MadflixSupport
+💬 For Any Help Contact @RDX_PVT_LTD
 """
 
 
