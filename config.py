@@ -2,36 +2,36 @@ import os, time, re
 id_pattern = re.compile(r'^.\d+$')
 
 
-
 class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-   
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","")
- 
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "")
+    DATABASE_URL  = os.environ.get("DATABASE_URL", "")
+
     # other configs
-    BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    BOT_UPTIME = time.time()
+    START_PIC  = os.environ.get("START_PIC", "")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
+    FORCE_SUBS  = os.environ.get("FORCE_SUBS", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
 
-    # wes response configuration     
+    # web response configuration
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
 
     # ✅ 4GB File Support — User Session (String Session)
-    # Isko set karo Telegram premium account ka string session
-    # Generate karo: python -c "from pyrogram import Client; Client(':memory:', api_id=API_ID, api_hash=API_HASH).run()"
+    # Telegram Premium account ka string session yahan set karo
+    # Generate: python3 -c "from pyrogram import Client; Client(':memory:', api_id=API_ID, api_hash='API_HASH').run()"
+    # Phir terminal mein: print(app.export_session_string())
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
-    # ✅ Max file size limit (4GB = 4096 MB)
-    MAX_FILE_SIZE = int(os.environ.get("MAX_FILE_SIZE", 4096)) * 1024 * 1024  # bytes mein
+    # ✅ Max file size: 4GB = 4294967296 bytes
+    MAX_FILE_SIZE = 4 * 1024 * 1024 * 1024  # 4GB in bytes
 
 
 class Txt(object):
@@ -100,7 +100,6 @@ If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upt
 <b>🛍 UPI ID:</b> `kumarjishusinha@ibl`
 """
 
-
     SEND_METADATA = """<b><u>🖼️  HOW TO SET CUSTOM METADATA</u></b>
 
 For Example :-
@@ -109,3 +108,11 @@ For Example :-
 
 💬 For Any Help Contact @MadflixSupport
 """
+
+
+# Jishu Developer
+# Don't Remove Credit 🥺
+# Telegram Channel @MadflixBotz
+# Backup Channel @JishuBotz
+# Developer @JishuDeveloper
+# Contact @MadflixSupport
