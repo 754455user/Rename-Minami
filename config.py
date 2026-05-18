@@ -25,6 +25,13 @@ class Config(object):
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
 
+    # ✅ 4GB File Support — User Session (String Session)
+    # Isko set karo Telegram premium account ka string session
+    # Generate karo: python -c "from pyrogram import Client; Client(':memory:', api_id=API_ID, api_hash=API_HASH).run()"
+    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+
+    # ✅ Max file size limit (4GB = 4096 MB)
+    MAX_FILE_SIZE = int(os.environ.get("MAX_FILE_SIZE", 4096)) * 1024 * 1024  # bytes mein
 
 
 class Txt(object):
@@ -102,17 +109,3 @@ For Example :-
 
 💬 For Any Help Contact @MadflixSupport
 """
-
-
-
-
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @MadflixBotz
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
-# Contact @MadflixSupport
